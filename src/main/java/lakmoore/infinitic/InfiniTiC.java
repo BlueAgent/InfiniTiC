@@ -50,14 +50,14 @@ public class InfiniTiC {
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent e) {
-	    	LOGGER = e.getModLog();
-	    	CONFIGDIR = new File(e.getModConfigurationDirectory(), InfiniTiC.MODID);
-	
-	    	if (!CONFIGDIR.exists()) {
-	    		CONFIGDIR.mkdirs();
-	    	}
+    	LOGGER = e.getModLog();
+    	CONFIGDIR = new File(e.getModConfigurationDirectory(), InfiniTiC.MODID);
 
-    		proxy.preInit(e);
+    	if (!CONFIGDIR.exists()) {
+    		CONFIGDIR.mkdirs();
+    	}
+
+		proxy.preInit(e);
 
 		//Event Handler... to handle all our events!
 		MinecraftForge.EVENT_BUS.register(proxy);
@@ -71,7 +71,7 @@ public class InfiniTiC {
     
     @EventHandler
     public void postInit(FMLPostInitializationEvent e) { 
-    		proxy.postInit(e);
+    	proxy.postInit(e);
     }
     
     @EventHandler
