@@ -1,6 +1,9 @@
 Infini-TiC Changelog
 ====================
 
+v0.1.44
+Build for MC version 1.11.2
+
 v0.1.43
 Build for MC version 1.10.2
 Infini-TiC fluids now resemble their own colours on maps.
