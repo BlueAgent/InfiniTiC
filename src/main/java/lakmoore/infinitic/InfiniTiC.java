@@ -7,6 +7,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 
 import org.apache.logging.log4j.Logger;
 
+import lakmoore.infinitic.client.FogHandler;
 import lakmoore.infinitic.lib.data.MaterialData;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -52,6 +53,7 @@ public class InfiniTiC {
 
 		//Event Handler... to handle all our events!
 		MinecraftForge.EVENT_BUS.register(proxy);
+		MinecraftForge.EVENT_BUS.register(FogHandler.INSTANCE);
     }
     
 	@EventHandler
