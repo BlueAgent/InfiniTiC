@@ -1,6 +1,15 @@
 Infini-TiC Changelog
 ====================
 
+v0.1.43
+Build for MC version 1.10.2
+Infini-TiC fluids now resemble their own colours on maps.
+The fog colour seen when immersed in Tinker Fluids is now the colour of the fluid.
+
+v0.1.42
+Build for MC version 1.12.2
+BugFix: Issue #12 and #13 - Mod is now Server Friendly
+
 v0.1.41
 Build for MC version 1.11.2
 BugFix: Issue #9 Mod is now Server Friendly

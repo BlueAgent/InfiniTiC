@@ -36,7 +36,7 @@ repositories {
 
 // Define properties file
 ext.configFile = file "build.properties"
-def numbersFile = new File("buildno.properties")	
+def numbersFile = new File("$rootDir/buildno.properties")	
 
 configFile.withReader {
     // Load config.  It shall from now be referenced as simply config or project.config
