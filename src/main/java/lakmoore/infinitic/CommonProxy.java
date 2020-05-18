@@ -58,7 +58,6 @@ public class CommonProxy {
 		    if (material.isValid())
 		    {
 			    	material.getSolids();
-			    	material.addToOreDict();
 			    	material.makeMaterial();
 	    			material.makeFluid();	    			
 		    		material.integrateMaterial();
@@ -72,6 +71,7 @@ public class CommonProxy {
 		for (MaterialData material : InfiniTiC.MATERIALS) {
 		    if (material.isValid())
 		    {
+				material.addToOreDict();
 		    		material.addMaterialTraits();
 
 				if (material.json.hasGems() && material.fluid != null) {
